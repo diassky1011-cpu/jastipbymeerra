@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Parfum</title>
+
+    <!-- HUBUNGKAN CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- HERO / BANNER -->
+<section id="home" class="hero">
+<h2>JASTIP PARFUM BYMEERA</h2>
+<p>Parfum original, harga terjangkau, kualitas premium.</p>
+<a href="#produk" class="btn">Lihat Produk</a>
+</section>
+
+
+<!-- PRODUK -->
+<section id="produk" class="produk-section">
+<h2>Katalog Parfum</h2>
+<div class="produk-container">
+
+<!-- Produk 1 -->
+<div class="produk-card">
+<img src="assets/images/parfum1.jpg" alt="Parfum Pria" />
+<h3>Osma</h3>
+<p class="harga">Rp 150.000</p>
+<button onclick="tambahKeKeranjang('Black Series', 150000)">Beli</button>
+</div>
+
+
+<!-- Produk 2 -->
+<div class="produk-card">
+<img src="assets/images/parfum2.jpg" alt="Parfum Wanita" />
+<h3>Rose Noir</h3>
+<p class="harga">Rp 120.000</p>
+<button onclick="tambahKeKeranjang('Sweet Bloom', 120000)">Beli</button>
+</div>
+
+
+<!-- Produk 3 -->
+<div class="produk-card">
+<img src="assets/images/parfum3.jpg" alt="Unisex" />
+<h3>Niche</h3>
+<p class="harga">Rp 130.000</p>
+<button onclick="tambahKeKeranjang('Fresh Ocean', 130000)">Beli</button>
+</div>
+</div>
+</section>
+
+
+<!-- KERANJANG -->
+<section id="keranjang" class="keranjang">
+<h2>Keranjang Belanja</h2>
+<ul id="listKeranjang"></ul>
+<p id="totalHarga">Total: Rp 0</p>
+</section>
+ 
+<button class="wa-btn" onclick="checkoutWhatsApp()">
+        <img src="assets/icons/wa.png" class="wa-icon"> Checkout via WhatsApp
+    </button>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+<p>&copy; 2025 jastip parfum bymeera. All Rights Reserved.</p>
+</footer>
+
+
+<script src="script.js"></script>
+
+<a href="https://wa.me/62812-1684-2207" class="wa-float" target="_blank">
+    <img src="assets/icons/wa.png" class="wa-float-icon">
+</a>
+
+</body>
+</html>
